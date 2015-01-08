@@ -1,7 +1,9 @@
 /**
- * Angular module for managing connection and subscription to STOMP queues.
+ * Stompie 0.0.5
  *
- * @author mr.olafsson@gmail.com
+ * Angular module for managing connection and subscribing to STOMP queues.
+ *
+ * @author mrolafsson
  */
 angular.module('stompie', [])
     .factory('$stompie', ['$rootScope', '$timeout', function ($rootScope, $timeout) {
@@ -26,7 +28,7 @@ angular.module('stompie', [])
         };
 
         /**
-         * Periodically reconnects if the connection is closed.
+         * Periodically attempts reconnect if the connection is closed.
          *
          * @private
          */
@@ -54,6 +56,7 @@ angular.module('stompie', [])
          *
          * @param endpoint
          * @param callback
+         * @private
          */
         _stompie._connect = function (endpoint, callback) {
             _endpoint = endpoint;
@@ -63,7 +66,6 @@ angular.module('stompie', [])
 
         /**
          * Use and create a connection if one is not already present.
-         *
          * TODO At present it will only allow connections to a single endpoint.
          *
          * @param endpoint
@@ -91,7 +93,6 @@ angular.module('stompie', [])
          *
          * @param channel
          * @param callback
-         *
          * @returns subscription with which you can unsubscribe.
          */
         _stompie.subscribe = function (channel, callback) {
@@ -110,11 +111,18 @@ angular.module('stompie', [])
          *
          * @param queue
          * @param obj
+         * @param priority
+         * @returns {_stompie}
          */
         _stompie.send = function (queue, obj, priority) {
-            _socket.stomp.send(queue, {
-                priority: (priority !== undefined ? priority : 9)
-            }, JSON.stringify(obj));
+            try {
+                var json = JSON.stringify(obj);
+                _socket.stomp.send(queue, {
+                    priority: (priority !== undefined ? priority : 9)
+                }, json);
+            } catch (e) {
+                throw e;
+            }
 
             return this;
         };
