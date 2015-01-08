@@ -1,6 +1,6 @@
 {
   "name": "stompie",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "authors": [
     "mrolafsson"
   ],
@@ -22,5 +22,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+	  "sockjs": "latest",
+	  "stomp-websocket": "latest"
+  }
 }
