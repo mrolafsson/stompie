@@ -1,0 +1,26 @@
+{
+  "name": "stompie",
+  "version": "0.0.1",
+  "authors": [
+    "mrolafsson"
+  ],
+  "description": "Angular module for STOMP",
+  "main": "stompie.js",
+  "keywords": [
+    "angular",
+    "stomp",
+    "websocket",
+    "sockjs",
+    "topic",
+    "queue"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mrolafsson/stompie",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
