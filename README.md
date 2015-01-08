@@ -5,7 +5,7 @@ just the thing for you. On the [big iron](http://en.wikipedia.org/wiki/Big_iron)
 
 For everything else, there's [MasterCard](http://en.wikipedia.org/wiki/MasterCard#Advertising).
 
-> For more information see:
+> Bedtime reading:
 > * https://github.com/sockjs/sockjs-client
 > * http://jmesnil.net/stomp-websocket/doc/
 > * https://github.com/jmesnil/stomp-websocket/
