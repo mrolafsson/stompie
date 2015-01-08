@@ -2,6 +2,11 @@
 
 Angular module to manage communicating with STOMP queues over a WebSocket.
 
+> For more information see:
+> * https://github.com/sockjs/sockjs-client
+> * http://jmesnil.net/stomp-websocket/doc/
+> * https://github.com/jmesnil/stomp-websocket/
+
 ## Getting started
 
 1. If you're using bower just install:
