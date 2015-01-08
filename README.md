@@ -1,6 +1,9 @@
 # Stompie
 
-Angular module to manage communicating with STOMP queues over a WebSocket.
+If you're planning to [stomp](http://jmesnil.net/stomp-websocket/doc/) all over some [sockets](https://github.com/sockjs/sockjs-client) this little [angularity](https://angularjs.org) to deal with STOMP queues is
+just the thing for you. On the [big iron](http://en.wikipedia.org/wiki/Big_iron), server side, we're using [Spring](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/websocket.html#websocket-stomp-enable).
+
+For everything else, there's [MasterCard](http://en.wikipedia.org/wiki/MasterCard#Advertising).
 
 > For more information see:
 > * https://github.com/sockjs/sockjs-client
