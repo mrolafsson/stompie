@@ -3,13 +3,6 @@
 If you're planning to [stomp](http://jmesnil.net/stomp-websocket/doc/) all over some [sockets](https://github.com/sockjs/sockjs-client) this little [angularity](https://angularjs.org) to deal with STOMP queues is
 just the thing for you. On the [big iron](http://en.wikipedia.org/wiki/Big_iron), server side, we're using [Spring](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/websocket.html#websocket-stomp-enable).
 
-For everything else, there's [MasterCard](http://en.wikipedia.org/wiki/MasterCard#Advertising).
-
-> Bedtime reading:
-> * https://github.com/sockjs/sockjs-client
-> * http://jmesnil.net/stomp-websocket/doc/
-> * https://github.com/jmesnil/stomp-websocket/
-
 ## Getting started
 
 1. If you're using bower just install:
@@ -72,3 +65,10 @@ $stompie.using('/your/stomp/endpoint', function () {
 * The underlying libraries also mean that you can register multiple subscribers.
 * The `$stompie.subscribe()` callback will attempt to parse the response.
 * Objects you pass to `$stompie.send()` will be stringified.
+
+> Bedtime reading:
+> * https://github.com/sockjs/sockjs-client
+> * http://jmesnil.net/stomp-websocket/doc/
+> * https://github.com/jmesnil/stomp-websocket/
+
+For everything else, there's [MasterCard](http://en.wikipedia.org/wiki/MasterCard#Advertising).
