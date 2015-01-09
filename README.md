@@ -65,3 +65,10 @@ $stompie.using('/your/stomp/endpoint', function () {
 
 });
 ```
+
+## Helpful information
+
+* You can call `$stompie.using()` as many times as you want, it will reuse the same socket connection.
+* The underlying libraries also mean that you can register multiple subscribers.
+* The `$stompie.subscribe()` callback will attempt to parse the response.
+* Objects you pass to `$stompie.send()` will be stringified.
